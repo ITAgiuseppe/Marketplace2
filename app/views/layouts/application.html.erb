@@ -18,56 +18,58 @@
     <%= javascript_importmap_tags %>
 
     <!-- NAVBAR -->
-  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-light" style= "background-color: #2A9D8F">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="http://localhost:3000/" style="color: #264653;">THOLOS DEVELOPER SCHOOL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#" style="color: #264653;">I nostri corsi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:3000/about" style="color: #264653;">About us</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #264653;">
+           Utente
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="http://localhost:3000/users/sign_up" style="color: #264653;">Registrati</a></li>
+            <li><a class="dropdown-item" href="http://localhost:3000/users/sign_in" style="color: #264653;">Accedi</a></li>
+            <li><a class="dropdown-item" href="http://localhost:3000/users/password/new" style="color: #264653;">Recupero password</a></li>
           </ul>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-     </div>
-   </div>
-  </nav>
+    </div>
+  </div>
+</nav>
 </head>
 
        <!--FLASH MESSAGES CONFIG-->
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
 
+
+
     <!--BACKGROUND-->
-  <body style="background-color: #e3f2fd">
+  <body style = "background-color: #264653;" alt="descriptive text" class="container">
 
     <!--IMAGE-->
-    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHRtbHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="descriptive text" width="1332" height="300">
+    
 
+    <!--CENTER ALIGNMENT-->
+<div class="container">
     
     <%= yield %>
-
+    
     <!-- BOOTSTRAP JAVASCRIPT LINK -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+</div>
   </body>
 </html>
