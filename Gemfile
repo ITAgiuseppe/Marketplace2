@@ -47,6 +47,8 @@ gem 'devise'
 
 gem 'materialize-sass', '~> 1.0.0'
 
+gem "paperclip", "~> 6.0.0"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
